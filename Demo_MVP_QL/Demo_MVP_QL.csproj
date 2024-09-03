@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7390905B-2C99-4368-A6FD-19FA6F42B0AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Demo_MVP_QL</RootNamespace>
+    <AssemblyName>Demo_MVP_QL</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\Banan.cs" />
+    <Compile Include="Model\danhmuc.cs" />
+    <Compile Include="Model\Food.cs" />
+    <Compile Include="Model\MonAn.cs" />
+    <Compile Include="Model\Table.cs" />
+    <Compile Include="Presenter\Banan_Presenter\AddBanan_Presenter.cs" />
+    <Compile Include="Presenter\Banan_Presenter\DeleteBanan_Presenter.cs" />
+    <Compile Include="Presenter\Banan_Presenter\DodlBanan_Presenter.cs" />
+    <Compile Include="Presenter\Banan_Presenter\ShowBanAn_Presenter.cs" />
+    <Compile Include="Presenter\Banan_Presenter\UpdateBanan_Presenter.cs" />
+    <Compile Include="Presenter\Danhmuc_Presenter\AddDanhmuc_Precenter.cs" />
+    <Compile Include="Presenter\Danhmuc_Presenter\DeleteDanhmuc_Precenter.cs" />
+    <Compile Include="Presenter\Danhmuc_Presenter\Showdanhmuc.cs" />
+    <Compile Include="Presenter\Danhmuc_Presenter\UpdateDanhmuc_Precenter.cs" />
+    <Compile Include="Presenter\Danhmuc_Presenter\vitridanhmuc_presenter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\AddMonan_Presenter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\DeleteMonan_Presenter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\SearchMonan_Preseneter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\ShowmonAn_Presenter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\UpdateMonan_Presenter.cs" />
+    <Compile Include="Presenter\MonAn_Presenter\vitri_monan_Presenter.cs" />
+    <Compile Include="Presenter\TrangChu_Presenter\TablePresenter.cs" />
+    <Compile Include="View\Banan_View\IAddBanan.cs" />
+    <Compile Include="View\Banan_View\IDeleteBanan.cs" />
+    <Compile Include="View\Banan_View\IDodulieuBanan.cs" />
+    <Compile Include="View\Banan_View\IShowBanan.cs" />
+    <Compile Include="View\Banan_View\IUpdateBanan.cs" />
+    <Compile Include="View\danhmuc\IAddDanhmuc.cs" />
+    <Compile Include="View\danhmuc\IDeleteDanhmuc.cs" />
+    <Compile Include="View\danhmuc\ISelectDanhmuc.cs" />
+    <Compile Include="View\danhmuc\IshowDanhmuc.cs" />
+    <Compile Include="View\danhmuc\IUpdateDanhmuc.cs" />
+    <Compile Include="View\fAccountProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fAccountProfile.Designer.cs">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fAdmin.Designer.cs">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\fTrangchu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\fTrangchu.Designer.cs">
+      <DependentUpon>fTrangchu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Monan_View\IaddMonan.cs" />
+    <Compile Include="View\Monan_View\IDelete_Monan.cs" />
+    <Compile Include="View\Monan_View\Iselect_Monan.cs" />
+    <Compile Include="View\Monan_View\IShearch_Monan.cs" />
+    <Compile Include="View\Monan_View\Ishowmonan.cs" />
+    <Compile Include="View\Monan_View\Iupdate_monan.cs" />
+    <Compile Include="View\trangchu\IShowTrangChu.cs" />
+    <Compile Include="View\TrangChu_View\IView.cs" />
+    <EmbeddedResource Include="View\fAccountProfile.resx">
+      <DependentUpon>fAccountProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fAdmin.resx">
+      <DependentUpon>fAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\fTrangchu.resx">
+      <DependentUpon>fTrangchu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="IMG\back1.jpg" />
+    <Content Include="IMG\back2.jpg" />
+    <Content Include="IMG\can.png" />
+    <Content Include="IMG\caret_right.png" />
+    <Content Include="IMG\nguoi.png" />
+    <Content Include="IMG\nguoi2.png" />
+    <Content Include="IMG\person.png" />
+    <None Include="Resources\banner2.jpg" />
+    <None Include="Resources\back2.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -161,6 +161,7 @@ namespace Demo_MVP_QL
             }
 
             _presenter.AddFoodToTable(_selectedTableId, selectedFoodId,count);
+            MessageBox.Show("thêm thành công");
         }
 
 

@@ -156,6 +156,7 @@
     <Content Include="IMG\nguoi.png" />
     <Content Include="IMG\nguoi2.png" />
     <Content Include="IMG\person.png" />
+    <None Include="Resources\top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-9.jpg" />
     <None Include="Resources\banner2.jpg" />
     <None Include="Resources\back2.jpg" />
   </ItemGroup>

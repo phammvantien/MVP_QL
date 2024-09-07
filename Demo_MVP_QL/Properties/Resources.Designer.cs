@@ -79,5 +79,15 @@ namespace Demo_MVP_QL.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap top_15_hinh_anh_mon_an_ngon_viet_nam_khien_ban_khong_the_roi_mat_9 {
+            get {
+                object obj = ResourceManager.GetObject("top-15-hinh-anh-mon-an-ngon-viet-nam-khien-ban-khong-the-roi-mat-9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

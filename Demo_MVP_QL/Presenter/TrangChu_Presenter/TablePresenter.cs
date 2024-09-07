@@ -41,6 +41,7 @@ namespace Demo_MVP_QL.Presenter.TrangChu_Presenter
         {
             _tableModel.AddFoodToTable(tableId, foodId,count);
             DisplayFoodItemsForTable(tableId);
+            
         }
 
         public void DisplayFoodItemsForTable(int tableId)
